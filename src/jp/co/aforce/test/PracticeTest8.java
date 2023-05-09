@@ -77,6 +77,7 @@ public class PracticeTest8 {
 		}
 		return date + "の天気は" + weather + "でしょう。";
 	}
+	
 	//練習問題７
 	
 	public boolean isEvenNumber(int value){
