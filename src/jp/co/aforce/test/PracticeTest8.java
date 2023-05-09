@@ -11,14 +11,19 @@ public class PracticeTest8 {
 	//練習問題２
 
 	public void printRandomMessage() {
-		String[] str = new String[3];
-		str[0] = "こんばんは";
-		str[1] = "こんにちは";
-		str[2] = "おはよう";
 		int n = (int) (3 * Math.random());
-		System.out.println(n);
+		switch(n) {
+		case 0:
+			System.out.println("こんばんは");
+			break;
+		case 1:
+			System.out.println("こんにちは");
+			break;
+		default:
+			System.out.println("おはよう");
+		}
 	}
-
+	
 	//練習問題３
 	
 	 void printMessage(String message) {
