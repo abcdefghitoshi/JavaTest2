@@ -101,13 +101,14 @@ public class PracticeTest8 {
 	//練習問題９
 	
 	public String getLongestString(String[] array) {
-		int ansIdx = 0;
-		for(int i = 0; i < array.length; i++) {
-			if(array[i].length() >= array[ansIdx].length()) {
-				ansIdx = i;
-			}
+		int leng = 0;
+		
+		for(int m = 0; m < array.length; m++) {
+			if(array[m].length() >= array[leng].length()) {
+				leng = m;
+			} 
 		}
-		return array[ansIdx];
+		return  array[leng];
 	}
 	
 	//練習問題１０
