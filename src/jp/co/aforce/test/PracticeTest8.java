@@ -47,14 +47,36 @@ public class PracticeTest8 {
 
 	//練習問題６
 	public String getWeatherForecast() {
-		int dayIdx = (int)(3 * Math.random());
-		int weatherIdx = (int)(4 * Math.random());
-		String[] days = {"今日", "明日", "明後日"};
-		String[] weather = {"晴れ", "曇り", "雨", "雪"};
+		int n = (int) (3 * Math.random());
+		String date;
+		switch(n) {
+		case 0:
+			date = "今日";
+			break;
+		case 1:
+			date = "明日";
+			break;
+		default:
+			date = "明後日";
+		}
 		
-		return String.format("%sの天気は%sでしょう。", days[dayIdx], weather[weatherIdx]);
+		int m = (int) (4 * Math.random());
+		String weather;
+		switch(m) {
+		case 0:
+			weather = "晴れ";
+			break;
+		case 1:
+			weather = "曇り";
+			break;
+		case 2:
+			weather = "雨";
+			break;
+		default:
+			weather = "雪";
+		}
+		return date + "の天気は" + weather + "でしょう。";
 	}
-	
 	//練習問題７
 	
 	public boolean isEvenNumber(int value){
